@@ -1,20 +1,10 @@
-#include <stdio.h>
-int main()
-{
-    int n;
-    printf("Enter the number of elements:");
-    scanf("%d",&n);
-    int arr[n];
-    printf("Enter %d elements:\n",n);
-    for(int i=0;i<n;i++)
-    {
-        scanf("%d",&arr[i]);
-
-    }
-    for(int i=0;i<n;i++)
-    {
-        if(arr[i]>0)
-          printf("%d, ",arr[i]);
-    }
-    return 0;
-}  
+list=[]
+n=int(input("Enter the number of elements:"))
+print("Now enter the elements in the list:")
+for i in range(0,n):
+    a=int(input())
+    list.append(a)
+print("The positive numbers within the List are:")
+for i in range(0,n):
+    if list[i]>0:
+       print(list[i]) 
